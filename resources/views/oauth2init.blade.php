@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Google OAuth2</title>
+        <title>Google OAuth2 Init</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
@@ -32,18 +32,7 @@
                 </div>
 
                 <div class="links">
-                    <a href="https://github.com/google/google-api-php-client">Google API Client</a>
-                    <a href="https://github.com/laravel/laravel">Laravel</a>
-                </div>
-
-                <div align="left">
-                    <ol>
-                        <li><a href="/oauth2init">Init</a></li>
-                        <li>Authorize on Google</li>
-                        <li>Callback with auth code</li>
-                        <li>Get access token using auth code</li>
-                        <li>Use API using token</li>
-                    </ol>
+                    <a href="{{ $google_auth_url }}">URL to authorize our app</a>
                 </div>
             </div>
         </div>

@@ -30,9 +30,16 @@ return [
     ],
 
     'stripe' => [
-        'model' => App\User::class,
-        'key' => env('STRIPE_KEY'),
+        'model'  => App\User::class,
+        'key'    => env('STRIPE_KEY'),
         'secret' => env('STRIPE_SECRET'),
+    ],
+
+    'google' => [
+        'key'           => env('GOOGLE_API_KEY'),
+        'client_id'     => env('GOOGLE_API_CLIENT_ID'),
+        'client_secret' => env('GOOGLE_API_CLIENT_SECRET'),
+        'auth_file'     => base_path('/google.json'),
     ],
 
 ];
